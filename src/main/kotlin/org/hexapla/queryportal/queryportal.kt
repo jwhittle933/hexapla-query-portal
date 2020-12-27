@@ -1,3 +1,6 @@
+package org.hexapla.queryportal
+
+import WelcomeStyles
 import kotlinx.html.InputType
 import kotlinx.html.js.onChangeFunction
 import org.w3c.dom.HTMLInputElement
@@ -8,7 +11,6 @@ import react.RState
 import styled.css
 import styled.styledDiv
 import styled.styledInput
-import org.hexapla.queryportal.QueryPortalStyles
 
 external interface QueryPortalProps: RProps {
     var name: String
