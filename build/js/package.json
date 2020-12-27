@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/queryportal"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "queryportal",
+  "version": "1.0-SNAPSHOT"
+}
