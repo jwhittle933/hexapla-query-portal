@@ -55,20 +55,6 @@ config.devServer = {
   ]
 };
 
-// Report progress to console
-// noinspection JSUnnecessarySemicolon
-;(function(config) {
-    const webpack = require('webpack');
-    const handler = (percentage, message, ...args) => {
-        const p = percentage * 100;
-        let msg = `${Math.trunc(p / 10)}${Math.trunc(p % 10)}% ${message} ${args.join(' ')}`;
-        msg = msg.replace(new RegExp("/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js", 'g'), '');;
-        console.log(msg);
-    };
-
-    config.plugins.push(new webpack.ProgressPlugin(handler))
-})(config);
-
 // css settings
 ;(function(config) {
     ;(function(config) {
@@ -104,6 +90,25 @@ config.devServer = {
         errors: false
     })
 })(config);
+
+// scss.js
+config.module.rules.push({
+    test: /\.s[ac]ss$/,
+    use: [
+        "style-loader",
+        "css-loader",
+        "sass-loader",
+    ]
+})
+config.module.rules.push({
+    test: /\.css$/,
+    use: [
+        "style-loader",
+        "css-loader"
+    ]
+})
+
+
 // save evaluated config file
 ;(function(config) {
     const util = require('util');

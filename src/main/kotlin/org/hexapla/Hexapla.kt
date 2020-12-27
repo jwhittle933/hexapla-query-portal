@@ -1,3 +1,3 @@
 package org.hexapla
 
-internal class Hexapla(version: Float, maintainer: String, year: String)
+data class Hexapla(val version: Float, val maintainer: String, val year: String)

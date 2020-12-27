@@ -7,14 +7,6 @@
     ]
   },
   plugins: [
-    ProgressPlugin {
-      profile: false,
-      handler: [Function: handler],
-      modulesCount: 500,
-      showEntries: false,
-      showModules: true,
-      showActiveModules: true
-    },
     TeamCityErrorPlugin {}
   ],
   module: {
@@ -37,6 +29,21 @@
             loader: 'css-loader',
             options: {}
           }
+        ]
+      },
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
         ]
       }
     ]

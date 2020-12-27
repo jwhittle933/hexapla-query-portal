@@ -1,49 +1,30 @@
 package org.hexapla.queryportal
 
-import WelcomeStyles
-import kotlinx.html.InputType
-import kotlinx.html.js.onChangeFunction
-import org.w3c.dom.HTMLInputElement
-import react.RBuilder
-import react.RComponent
-import react.RProps
-import react.RState
-import styled.css
-import styled.styledDiv
-import styled.styledInput
+import kotlinx.css.*
+import org.hexapla.queryportal.global.qpHeader
+import react.*
+import react.dom.*
+import styled.*
+import kotlin.Float
 
 external interface QueryPortalProps: RProps {
-    var name: String
+    var title : String
+    var version: Float
+    var maintianer: String
 }
 
 data class QueryPortalState(val name: String) : RState
 
+@JsName("QueryPortal")
 @JsExport
-class QueryPortal(props: QueryPortalProps) : RComponent<QueryPortalProps, QueryPortalState>(props) {
-    init {
-        state = QueryPortalState(props.name)
+val QueryPortal = functionalComponent<QueryPortalProps> { props ->
+    qpHeader {
+        title = props.title
     }
+}
 
-    override fun RBuilder.render() {
-        styledDiv {
-            css {
-                +QueryPortalStyles.mainView
-            }
-            +"Hello, ${state.name}"
-        }
-        styledInput {
-            css {
-                +WelcomeStyles.textInput
-            }
-            attrs {
-                type = InputType.text
-                value = state.name
-                onChangeFunction = { event ->
-                    setState(
-                        QueryPortalState(name = (event.target as HTMLInputElement).value)
-                    )
-                }
-            }
-        }
+fun RBuilder.queryPortal(handler: QueryPortalProps.() -> Unit) = child(QueryPortal) {
+    attrs {
+        handler()
     }
 }

@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "bulma": "> 0.9.0",
+    "sass": ">= 1.30.0",
+    "sass-loader": ">= 10.1.0",
+    "@fortawesome/fontawesome-free": ">= 5.15.0",
     "kotlin": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin/1.4.21",
     "kotlin-wrappers-kotlin-react-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-react-jsLegacy/1.0.0-SNAPSHOT",
     "kotlin-wrappers-kotlin-extensions-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-extensions-jsLegacy/1.0.1-pre.113-kotlin-1.4.0",
