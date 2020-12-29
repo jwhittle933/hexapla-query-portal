@@ -1,0 +1,40 @@
+{
+  "main": "kotlin/queryportal-test.js",
+  "devDependencies": {
+    "karma": "5.1.1",
+    "karma-mocha": "2.0.1",
+    "mocha": "8.1.1",
+    "karma-webpack": "4.0.2",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "source-map-loader": "1.0.1",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-chrome-launcher": "3.1.0",
+    "css-loader": "4.2.1",
+    "style-loader": "1.2.1"
+  },
+  "dependencies": {
+    "bulma": "> 0.9.0",
+    "sass": ">= 1.30.0",
+    "sass-loader": ">= 10.1.0",
+    "@fortawesome/fontawesome-free": ">= 5.15.0",
+    "queryportal": "1.0.0-SNAPSHOT",
+    "kotlin": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin/1.4.21",
+    "kotlin-wrappers-kotlin-react-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-react-jsLegacy/1.0.0-SNAPSHOT",
+    "kotlin-wrappers-kotlin-extensions-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-extensions-jsLegacy/1.0.1-pre.113-kotlin-1.4.0",
+    "kotlinx-coroutines-core": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlinx-coroutines-core/1.3.9",
+    "kotlinx-atomicfu": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlinx-atomicfu/0.14.4",
+    "kotlin-wrappers-kotlin-react-dom-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-react-dom-jsLegacy/1.0.0-SNAPSHOT",
+    "kotlinx-html-js": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlinx-html-js/0.7.2",
+    "kotlin-wrappers-kotlin-styled-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-styled-jsLegacy/1.0.0-SNAPSHOT",
+    "kotlin-css": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-css/1.0.0-pre.113-kotlin-1.4.0",
+    "kotlin-wrappers-kotlin-react-router-dom-jsLegacy": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-wrappers-kotlin-react-router-dom-jsLegacy/1.0.0-SNAPSHOT",
+    "kotlin-test": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-test/1.4.21",
+    "kotlin-test-js-runner": "file:/Users/jonathanwhittle/Development/Personal/Hexapla/hexapla-query-portal/build/js/packages_imported/kotlin-test-js-runner/1.4.21"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "queryportal-test",
+  "version": "1.0.0-SNAPSHOT"
+}
